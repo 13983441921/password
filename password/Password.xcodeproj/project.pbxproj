@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBC2E2FE194D5A5100F492E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC2E2FD194D5A5100F492E4 /* Foundation.framework */; };
+		DBC2E300194D5A5100F492E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC2E2FF194D5A5100F492E4 /* CoreGraphics.framework */; };
+		DBC2E302194D5A5100F492E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC2E301194D5A5100F492E4 /* UIKit.framework */; };
+		DBC2E308194D5A5100F492E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBC2E306194D5A5100F492E4 /* InfoPlist.strings */; };
+		DBC2E30A194D5A5100F492E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E309194D5A5100F492E4 /* main.m */; };
+		DBC2E30E194D5A5100F492E4 /* ArthurAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E30D194D5A5100F492E4 /* ArthurAppDelegate.m */; };
+		DBC2E311194D5A5100F492E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC2E30F194D5A5100F492E4 /* Main.storyboard */; };
+		DBC2E314194D5A5100F492E4 /* ArthurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E313194D5A5100F492E4 /* ArthurViewController.m */; };
+		DBC2E316194D5A5100F492E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC2E315194D5A5100F492E4 /* Images.xcassets */; };
+		DBC2E31D194D5A5100F492E4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC2E31C194D5A5100F492E4 /* XCTest.framework */; };
+		DBC2E31E194D5A5100F492E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC2E2FD194D5A5100F492E4 /* Foundation.framework */; };
+		DBC2E31F194D5A5100F492E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC2E301194D5A5100F492E4 /* UIKit.framework */; };
+		DBC2E327194D5A5100F492E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBC2E325194D5A5100F492E4 /* InfoPlist.strings */; };
+		DBC2E329194D5A5100F492E4 /* PasswordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E328194D5A5100F492E4 /* PasswordTests.m */; };
+		DBC2E37E194D5FE300F492E4 /* ArthurActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E335194D5FE300F492E4 /* ArthurActionSheet.m */; };
+		DBC2E37F194D5FE300F492E4 /* ArthurBlockChain.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E337194D5FE300F492E4 /* ArthurBlockChain.m */; };
+		DBC2E380194D5FE300F492E4 /* ArthurDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E339194D5FE300F492E4 /* ArthurDraw.m */; };
+		DBC2E381194D5FE300F492E4 /* ArthurFile.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E33B194D5FE300F492E4 /* ArthurFile.m */; };
+		DBC2E382194D5FE300F492E4 /* ArthurGlobalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E33D194D5FE300F492E4 /* ArthurGlobalHeader.m */; };
+		DBC2E383194D5FE300F492E4 /* ArthurHexOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E33F194D5FE300F492E4 /* ArthurHexOperation.m */; };
+		DBC2E384194D5FE300F492E4 /* ArthurMarco.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E341194D5FE300F492E4 /* ArthurMarco.m */; };
+		DBC2E385194D5FE300F492E4 /* ArthurNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E343194D5FE300F492E4 /* ArthurNetworkOperation.m */; };
+		DBC2E386194D5FE300F492E4 /* ArthurNetworkOperation2.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E345194D5FE300F492E4 /* ArthurNetworkOperation2.m */; };
+		DBC2E387194D5FE300F492E4 /* ArthurStringAndObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E347194D5FE300F492E4 /* ArthurStringAndObject.m */; };
+		DBC2E388194D5FE300F492E4 /* ArthurUnitChange.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E349194D5FE300F492E4 /* ArthurUnitChange.m */; };
+		DBC2E389194D5FE300F492E4 /* MNLib.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E34B194D5FE300F492E4 /* MNLib.m */; };
+		DBC2E38A194D5FE300F492E4 /* NSArray+NSArrayOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E34D194D5FE300F492E4 /* NSArray+NSArrayOperation.m */; };
+		DBC2E38B194D5FE300F492E4 /* NSDate+ArthurDate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E34F194D5FE300F492E4 /* NSDate+ArthurDate.m */; };
+		DBC2E38C194D5FE300F492E4 /* NSJSONSerialization+ArthurJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E351194D5FE300F492E4 /* NSJSONSerialization+ArthurJSON.m */; };
+		DBC2E38D194D5FE300F492E4 /* AnimationButtonGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E355194D5FE300F492E4 /* AnimationButtonGroup.m */; };
+		DBC2E38E194D5FE300F492E4 /* ArthurAnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E357194D5FE300F492E4 /* ArthurAnimationButton.m */; };
+		DBC2E38F194D5FE300F492E4 /* ArthurDialogSinglePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E35B194D5FE300F492E4 /* ArthurDialogSinglePickerViewController.m */; };
+		DBC2E390194D5FE300F492E4 /* ArthurDialogSinglePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBC2E35C194D5FE300F492E4 /* ArthurDialogSinglePickerViewController.xib */; };
+		DBC2E391194D5FE300F492E4 /* ArthurSinglePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E35E194D5FE300F492E4 /* ArthurSinglePicker.m */; };
+		DBC2E392194D5FE300F492E4 /* ArthurSinglePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBC2E35F194D5FE300F492E4 /* ArthurSinglePicker.xib */; };
+		DBC2E393194D5FE300F492E4 /* ArthurDialogTimePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E362194D5FE300F492E4 /* ArthurDialogTimePickerController.m */; };
+		DBC2E394194D5FE300F492E4 /* ArthurDialogTimePickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBC2E363194D5FE300F492E4 /* ArthurDialogTimePickerController.xib */; };
+		DBC2E395194D5FE300F492E4 /* ArthurTimePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E365194D5FE300F492E4 /* ArthurTimePickerController.m */; };
+		DBC2E396194D5FE300F492E4 /* ArthurTimePickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBC2E366194D5FE300F492E4 /* ArthurTimePickerController.xib */; };
+		DBC2E397194D5FE300F492E4 /* ArthurDialogSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E36A194D5FE300F492E4 /* ArthurDialogSegue.m */; };
+		DBC2E398194D5FE300F492E4 /* ArthurFixSectionHeadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E36E194D5FE300F492E4 /* ArthurFixSectionHeadTableViewController.m */; };
+		DBC2E399194D5FE300F492E4 /* ArthurSingleSelectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E371194D5FE300F492E4 /* ArthurSingleSelectTableViewController.m */; };
+		DBC2E39A194D5FE300F492E4 /* ArthurSingleSelectTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBC2E372194D5FE300F492E4 /* ArthurSingleSelectTableViewController.xib */; };
+		DBC2E39B194D5FE300F492E4 /* ArthurTableViewLocalPop.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E374194D5FE300F492E4 /* ArthurTableViewLocalPop.m */; };
+		DBC2E39C194D5FE300F492E4 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E377194D5FE300F492E4 /* Base64.m */; };
+		DBC2E39D194D5FE300F492E4 /* UIView+FindFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E37A194D5FE300F492E4 /* UIView+FindFirstResponder.m */; };
+		DBC2E39E194D5FE300F492E4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E37D194D5FE300F492E4 /* MBProgressHUD.m */; };
+		DBC2E3A1194D659200F492E4 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC2E3A0194D659200F492E4 /* ContentViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBC2E320194D5A5100F492E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBC2E2F2194D5A5100F492E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBC2E2F9194D5A5100F492E4;
+			remoteInfo = Password;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DBC2E2FA194D5A5100F492E4 /* Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Password.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC2E2FD194D5A5100F492E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DBC2E2FF194D5A5100F492E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DBC2E301194D5A5100F492E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DBC2E305194D5A5100F492E4 /* Password-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Password-Info.plist"; sourceTree = "<group>"; };
+		DBC2E307194D5A5100F492E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DBC2E309194D5A5100F492E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DBC2E30B194D5A5100F492E4 /* Password-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Password-Prefix.pch"; sourceTree = "<group>"; };
+		DBC2E30C194D5A5100F492E4 /* ArthurAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArthurAppDelegate.h; sourceTree = "<group>"; };
+		DBC2E30D194D5A5100F492E4 /* ArthurAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArthurAppDelegate.m; sourceTree = "<group>"; };
+		DBC2E310194D5A5100F492E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBC2E312194D5A5100F492E4 /* ArthurViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArthurViewController.h; sourceTree = "<group>"; };
+		DBC2E313194D5A5100F492E4 /* ArthurViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArthurViewController.m; sourceTree = "<group>"; };
+		DBC2E315194D5A5100F492E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DBC2E31B194D5A5100F492E4 /* PasswordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC2E31C194D5A5100F492E4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DBC2E324194D5A5100F492E4 /* PasswordTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PasswordTests-Info.plist"; sourceTree = "<group>"; };
+		DBC2E326194D5A5100F492E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DBC2E328194D5A5100F492E4 /* PasswordTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasswordTests.m; sourceTree = "<group>"; };
+		DBC2E334194D5FE300F492E4 /* ArthurActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurActionSheet.h; sourceTree = "<group>"; };
+		DBC2E335194D5FE300F492E4 /* ArthurActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurActionSheet.m; sourceTree = "<group>"; };
+		DBC2E336194D5FE300F492E4 /* ArthurBlockChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurBlockChain.h; sourceTree = "<group>"; };
+		DBC2E337194D5FE300F492E4 /* ArthurBlockChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurBlockChain.m; sourceTree = "<group>"; };
+		DBC2E338194D5FE300F492E4 /* ArthurDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurDraw.h; sourceTree = "<group>"; };
+		DBC2E339194D5FE300F492E4 /* ArthurDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurDraw.m; sourceTree = "<group>"; };
+		DBC2E33A194D5FE300F492E4 /* ArthurFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurFile.h; sourceTree = "<group>"; };
+		DBC2E33B194D5FE300F492E4 /* ArthurFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurFile.m; sourceTree = "<group>"; };
+		DBC2E33C194D5FE300F492E4 /* ArthurGlobalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurGlobalHeader.h; sourceTree = "<group>"; };
+		DBC2E33D194D5FE300F492E4 /* ArthurGlobalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurGlobalHeader.m; sourceTree = "<group>"; };
+		DBC2E33E194D5FE300F492E4 /* ArthurHexOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurHexOperation.h; sourceTree = "<group>"; };
+		DBC2E33F194D5FE300F492E4 /* ArthurHexOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurHexOperation.m; sourceTree = "<group>"; };
+		DBC2E340194D5FE300F492E4 /* ArthurMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurMarco.h; sourceTree = "<group>"; };
+		DBC2E341194D5FE300F492E4 /* ArthurMarco.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurMarco.m; sourceTree = "<group>"; };
+		DBC2E342194D5FE300F492E4 /* ArthurNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurNetworkOperation.h; sourceTree = "<group>"; };
+		DBC2E343194D5FE300F492E4 /* ArthurNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurNetworkOperation.m; sourceTree = "<group>"; };
+		DBC2E344194D5FE300F492E4 /* ArthurNetworkOperation2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurNetworkOperation2.h; sourceTree = "<group>"; };
+		DBC2E345194D5FE300F492E4 /* ArthurNetworkOperation2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurNetworkOperation2.m; sourceTree = "<group>"; };
+		DBC2E346194D5FE300F492E4 /* ArthurStringAndObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurStringAndObject.h; sourceTree = "<group>"; };
+		DBC2E347194D5FE300F492E4 /* ArthurStringAndObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurStringAndObject.m; sourceTree = "<group>"; };
+		DBC2E348194D5FE300F492E4 /* ArthurUnitChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurUnitChange.h; sourceTree = "<group>"; };
+		DBC2E349194D5FE300F492E4 /* ArthurUnitChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurUnitChange.m; sourceTree = "<group>"; };
+		DBC2E34A194D5FE300F492E4 /* MNLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNLib.h; sourceTree = "<group>"; };
+		DBC2E34B194D5FE300F492E4 /* MNLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNLib.m; sourceTree = "<group>"; };
+		DBC2E34C194D5FE300F492E4 /* NSArray+NSArrayOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NSArrayOperation.h"; sourceTree = "<group>"; };
+		DBC2E34D194D5FE300F492E4 /* NSArray+NSArrayOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NSArrayOperation.m"; sourceTree = "<group>"; };
+		DBC2E34E194D5FE300F492E4 /* NSDate+ArthurDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ArthurDate.h"; sourceTree = "<group>"; };
+		DBC2E34F194D5FE300F492E4 /* NSDate+ArthurDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ArthurDate.m"; sourceTree = "<group>"; };
+		DBC2E350194D5FE300F492E4 /* NSJSONSerialization+ArthurJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+ArthurJSON.h"; sourceTree = "<group>"; };
+		DBC2E351194D5FE300F492E4 /* NSJSONSerialization+ArthurJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+ArthurJSON.m"; sourceTree = "<group>"; };
+		DBC2E354194D5FE300F492E4 /* AnimationButtonGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationButtonGroup.h; sourceTree = "<group>"; };
+		DBC2E355194D5FE300F492E4 /* AnimationButtonGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationButtonGroup.m; sourceTree = "<group>"; };
+		DBC2E356194D5FE300F492E4 /* ArthurAnimationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurAnimationButton.h; sourceTree = "<group>"; };
+		DBC2E357194D5FE300F492E4 /* ArthurAnimationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurAnimationButton.m; sourceTree = "<group>"; };
+		DBC2E35A194D5FE300F492E4 /* ArthurDialogSinglePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurDialogSinglePickerViewController.h; sourceTree = "<group>"; };
+		DBC2E35B194D5FE300F492E4 /* ArthurDialogSinglePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurDialogSinglePickerViewController.m; sourceTree = "<group>"; };
+		DBC2E35C194D5FE300F492E4 /* ArthurDialogSinglePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArthurDialogSinglePickerViewController.xib; sourceTree = "<group>"; };
+		DBC2E35D194D5FE300F492E4 /* ArthurSinglePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurSinglePicker.h; sourceTree = "<group>"; };
+		DBC2E35E194D5FE300F492E4 /* ArthurSinglePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurSinglePicker.m; sourceTree = "<group>"; };
+		DBC2E35F194D5FE300F492E4 /* ArthurSinglePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArthurSinglePicker.xib; sourceTree = "<group>"; };
+		DBC2E361194D5FE300F492E4 /* ArthurDialogTimePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurDialogTimePickerController.h; sourceTree = "<group>"; };
+		DBC2E362194D5FE300F492E4 /* ArthurDialogTimePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurDialogTimePickerController.m; sourceTree = "<group>"; };
+		DBC2E363194D5FE300F492E4 /* ArthurDialogTimePickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArthurDialogTimePickerController.xib; sourceTree = "<group>"; };
+		DBC2E364194D5FE300F492E4 /* ArthurTimePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurTimePickerController.h; sourceTree = "<group>"; };
+		DBC2E365194D5FE300F492E4 /* ArthurTimePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurTimePickerController.m; sourceTree = "<group>"; };
+		DBC2E366194D5FE300F492E4 /* ArthurTimePickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArthurTimePickerController.xib; sourceTree = "<group>"; };
+		DBC2E369194D5FE300F492E4 /* ArthurDialogSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurDialogSegue.h; sourceTree = "<group>"; };
+		DBC2E36A194D5FE300F492E4 /* ArthurDialogSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurDialogSegue.m; sourceTree = "<group>"; };
+		DBC2E36D194D5FE300F492E4 /* ArthurFixSectionHeadTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurFixSectionHeadTableViewController.h; sourceTree = "<group>"; };
+		DBC2E36E194D5FE300F492E4 /* ArthurFixSectionHeadTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurFixSectionHeadTableViewController.m; sourceTree = "<group>"; };
+		DBC2E370194D5FE300F492E4 /* ArthurSingleSelectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurSingleSelectTableViewController.h; sourceTree = "<group>"; };
+		DBC2E371194D5FE300F492E4 /* ArthurSingleSelectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurSingleSelectTableViewController.m; sourceTree = "<group>"; };
+		DBC2E372194D5FE300F492E4 /* ArthurSingleSelectTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArthurSingleSelectTableViewController.xib; sourceTree = "<group>"; };
+		DBC2E373194D5FE300F492E4 /* ArthurTableViewLocalPop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurTableViewLocalPop.h; sourceTree = "<group>"; };
+		DBC2E374194D5FE300F492E4 /* ArthurTableViewLocalPop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurTableViewLocalPop.m; sourceTree = "<group>"; };
+		DBC2E376194D5FE300F492E4 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		DBC2E377194D5FE300F492E4 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		DBC2E379194D5FE300F492E4 /* UIView+FindFirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FindFirstResponder.h"; sourceTree = "<group>"; };
+		DBC2E37A194D5FE300F492E4 /* UIView+FindFirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FindFirstResponder.m"; sourceTree = "<group>"; };
+		DBC2E37C194D5FE300F492E4 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		DBC2E37D194D5FE300F492E4 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		DBC2E39F194D659200F492E4 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		DBC2E3A0194D659200F492E4 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBC2E2F7194D5A5100F492E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC2E300194D5A5100F492E4 /* CoreGraphics.framework in Frameworks */,
+				DBC2E302194D5A5100F492E4 /* UIKit.framework in Frameworks */,
+				DBC2E2FE194D5A5100F492E4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC2E318194D5A5100F492E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC2E31D194D5A5100F492E4 /* XCTest.framework in Frameworks */,
+				DBC2E31F194D5A5100F492E4 /* UIKit.framework in Frameworks */,
+				DBC2E31E194D5A5100F492E4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBC2E2F1194D5A5100F492E4 = {
+			isa = PBXGroup;
+			children = (
+				DBC2E303194D5A5100F492E4 /* Password */,
+				DBC2E322194D5A5100F492E4 /* PasswordTests */,
+				DBC2E2FC194D5A5100F492E4 /* Frameworks */,
+				DBC2E2FB194D5A5100F492E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBC2E2FB194D5A5100F492E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E2FA194D5A5100F492E4 /* Password.app */,
+				DBC2E31B194D5A5100F492E4 /* PasswordTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBC2E2FC194D5A5100F492E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E2FD194D5A5100F492E4 /* Foundation.framework */,
+				DBC2E2FF194D5A5100F492E4 /* CoreGraphics.framework */,
+				DBC2E301194D5A5100F492E4 /* UIKit.framework */,
+				DBC2E31C194D5A5100F492E4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBC2E303194D5A5100F492E4 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E30C194D5A5100F492E4 /* ArthurAppDelegate.h */,
+				DBC2E30D194D5A5100F492E4 /* ArthurAppDelegate.m */,
+				DBC2E30F194D5A5100F492E4 /* Main.storyboard */,
+				DBC2E312194D5A5100F492E4 /* ArthurViewController.h */,
+				DBC2E313194D5A5100F492E4 /* ArthurViewController.m */,
+				DBC2E39F194D659200F492E4 /* ContentViewController.h */,
+				DBC2E3A0194D659200F492E4 /* ContentViewController.m */,
+				DBC2E315194D5A5100F492E4 /* Images.xcassets */,
+				DBC2E332194D5FE300F492E4 /* ArthurLib */,
+				DBC2E304194D5A5100F492E4 /* Supporting Files */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		DBC2E304194D5A5100F492E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E305194D5A5100F492E4 /* Password-Info.plist */,
+				DBC2E306194D5A5100F492E4 /* InfoPlist.strings */,
+				DBC2E309194D5A5100F492E4 /* main.m */,
+				DBC2E30B194D5A5100F492E4 /* Password-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBC2E322194D5A5100F492E4 /* PasswordTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E328194D5A5100F492E4 /* PasswordTests.m */,
+				DBC2E323194D5A5100F492E4 /* Supporting Files */,
+			);
+			path = PasswordTests;
+			sourceTree = "<group>";
+		};
+		DBC2E323194D5A5100F492E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E324194D5A5100F492E4 /* PasswordTests-Info.plist */,
+				DBC2E325194D5A5100F492E4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBC2E332194D5FE300F492E4 /* ArthurLib */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E333194D5FE300F492E4 /* Arthur */,
+				DBC2E375194D5FE300F492E4 /* Base64 */,
+				DBC2E378194D5FE300F492E4 /* FindFirstResponder */,
+				DBC2E37B194D5FE300F492E4 /* MBProgressHUD */,
+			);
+			path = ArthurLib;
+			sourceTree = "<group>";
+		};
+		DBC2E333194D5FE300F492E4 /* Arthur */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E334194D5FE300F492E4 /* ArthurActionSheet.h */,
+				DBC2E335194D5FE300F492E4 /* ArthurActionSheet.m */,
+				DBC2E336194D5FE300F492E4 /* ArthurBlockChain.h */,
+				DBC2E337194D5FE300F492E4 /* ArthurBlockChain.m */,
+				DBC2E338194D5FE300F492E4 /* ArthurDraw.h */,
+				DBC2E339194D5FE300F492E4 /* ArthurDraw.m */,
+				DBC2E33A194D5FE300F492E4 /* ArthurFile.h */,
+				DBC2E33B194D5FE300F492E4 /* ArthurFile.m */,
+				DBC2E33C194D5FE300F492E4 /* ArthurGlobalHeader.h */,
+				DBC2E33D194D5FE300F492E4 /* ArthurGlobalHeader.m */,
+				DBC2E33E194D5FE300F492E4 /* ArthurHexOperation.h */,
+				DBC2E33F194D5FE300F492E4 /* ArthurHexOperation.m */,
+				DBC2E340194D5FE300F492E4 /* ArthurMarco.h */,
+				DBC2E341194D5FE300F492E4 /* ArthurMarco.m */,
+				DBC2E342194D5FE300F492E4 /* ArthurNetworkOperation.h */,
+				DBC2E343194D5FE300F492E4 /* ArthurNetworkOperation.m */,
+				DBC2E344194D5FE300F492E4 /* ArthurNetworkOperation2.h */,
+				DBC2E345194D5FE300F492E4 /* ArthurNetworkOperation2.m */,
+				DBC2E346194D5FE300F492E4 /* ArthurStringAndObject.h */,
+				DBC2E347194D5FE300F492E4 /* ArthurStringAndObject.m */,
+				DBC2E348194D5FE300F492E4 /* ArthurUnitChange.h */,
+				DBC2E349194D5FE300F492E4 /* ArthurUnitChange.m */,
+				DBC2E34A194D5FE300F492E4 /* MNLib.h */,
+				DBC2E34B194D5FE300F492E4 /* MNLib.m */,
+				DBC2E34C194D5FE300F492E4 /* NSArray+NSArrayOperation.h */,
+				DBC2E34D194D5FE300F492E4 /* NSArray+NSArrayOperation.m */,
+				DBC2E34E194D5FE300F492E4 /* NSDate+ArthurDate.h */,
+				DBC2E34F194D5FE300F492E4 /* NSDate+ArthurDate.m */,
+				DBC2E350194D5FE300F492E4 /* NSJSONSerialization+ArthurJSON.h */,
+				DBC2E351194D5FE300F492E4 /* NSJSONSerialization+ArthurJSON.m */,
+				DBC2E352194D5FE300F492E4 /* UI */,
+			);
+			path = Arthur;
+			sourceTree = "<group>";
+		};
+		DBC2E352194D5FE300F492E4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E353194D5FE300F492E4 /* AnimationButtonGroup */,
+				DBC2E358194D5FE300F492E4 /* Picker */,
+				DBC2E367194D5FE300F492E4 /* Segue */,
+				DBC2E36B194D5FE300F492E4 /* TableView */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DBC2E353194D5FE300F492E4 /* AnimationButtonGroup */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E354194D5FE300F492E4 /* AnimationButtonGroup.h */,
+				DBC2E355194D5FE300F492E4 /* AnimationButtonGroup.m */,
+				DBC2E356194D5FE300F492E4 /* ArthurAnimationButton.h */,
+				DBC2E357194D5FE300F492E4 /* ArthurAnimationButton.m */,
+			);
+			path = AnimationButtonGroup;
+			sourceTree = "<group>";
+		};
+		DBC2E358194D5FE300F492E4 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E359194D5FE300F492E4 /* SinglePicker */,
+				DBC2E360194D5FE300F492E4 /* TImePicker */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
+		DBC2E359194D5FE300F492E4 /* SinglePicker */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E35A194D5FE300F492E4 /* ArthurDialogSinglePickerViewController.h */,
+				DBC2E35B194D5FE300F492E4 /* ArthurDialogSinglePickerViewController.m */,
+				DBC2E35C194D5FE300F492E4 /* ArthurDialogSinglePickerViewController.xib */,
+				DBC2E35D194D5FE300F492E4 /* ArthurSinglePicker.h */,
+				DBC2E35E194D5FE300F492E4 /* ArthurSinglePicker.m */,
+				DBC2E35F194D5FE300F492E4 /* ArthurSinglePicker.xib */,
+			);
+			path = SinglePicker;
+			sourceTree = "<group>";
+		};
+		DBC2E360194D5FE300F492E4 /* TImePicker */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E361194D5FE300F492E4 /* ArthurDialogTimePickerController.h */,
+				DBC2E362194D5FE300F492E4 /* ArthurDialogTimePickerController.m */,
+				DBC2E363194D5FE300F492E4 /* ArthurDialogTimePickerController.xib */,
+				DBC2E364194D5FE300F492E4 /* ArthurTimePickerController.h */,
+				DBC2E365194D5FE300F492E4 /* ArthurTimePickerController.m */,
+				DBC2E366194D5FE300F492E4 /* ArthurTimePickerController.xib */,
+			);
+			path = TImePicker;
+			sourceTree = "<group>";
+		};
+		DBC2E367194D5FE300F492E4 /* Segue */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E368194D5FE300F492E4 /* ArthurDialogSegue */,
+			);
+			path = Segue;
+			sourceTree = "<group>";
+		};
+		DBC2E368194D5FE300F492E4 /* ArthurDialogSegue */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E369194D5FE300F492E4 /* ArthurDialogSegue.h */,
+				DBC2E36A194D5FE300F492E4 /* ArthurDialogSegue.m */,
+			);
+			path = ArthurDialogSegue;
+			sourceTree = "<group>";
+		};
+		DBC2E36B194D5FE300F492E4 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E36C194D5FE300F492E4 /* ArthurFixSectionHeadTableViewController */,
+				DBC2E36F194D5FE300F492E4 /* ArthurSingleSelectTableViewController */,
+				DBC2E373194D5FE300F492E4 /* ArthurTableViewLocalPop.h */,
+				DBC2E374194D5FE300F492E4 /* ArthurTableViewLocalPop.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DBC2E36C194D5FE300F492E4 /* ArthurFixSectionHeadTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E36D194D5FE300F492E4 /* ArthurFixSectionHeadTableViewController.h */,
+				DBC2E36E194D5FE300F492E4 /* ArthurFixSectionHeadTableViewController.m */,
+			);
+			path = ArthurFixSectionHeadTableViewController;
+			sourceTree = "<group>";
+		};
+		DBC2E36F194D5FE300F492E4 /* ArthurSingleSelectTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E370194D5FE300F492E4 /* ArthurSingleSelectTableViewController.h */,
+				DBC2E371194D5FE300F492E4 /* ArthurSingleSelectTableViewController.m */,
+				DBC2E372194D5FE300F492E4 /* ArthurSingleSelectTableViewController.xib */,
+			);
+			path = ArthurSingleSelectTableViewController;
+			sourceTree = "<group>";
+		};
+		DBC2E375194D5FE300F492E4 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E376194D5FE300F492E4 /* Base64.h */,
+				DBC2E377194D5FE300F492E4 /* Base64.m */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		DBC2E378194D5FE300F492E4 /* FindFirstResponder */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E379194D5FE300F492E4 /* UIView+FindFirstResponder.h */,
+				DBC2E37A194D5FE300F492E4 /* UIView+FindFirstResponder.m */,
+			);
+			path = FindFirstResponder;
+			sourceTree = "<group>";
+		};
+		DBC2E37B194D5FE300F492E4 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				DBC2E37C194D5FE300F492E4 /* MBProgressHUD.h */,
+				DBC2E37D194D5FE300F492E4 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBC2E2F9194D5A5100F492E4 /* Password */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBC2E32C194D5A5100F492E4 /* Build configuration list for PBXNativeTarget "Password" */;
+			buildPhases = (
+				DBC2E2F6194D5A5100F492E4 /* Sources */,
+				DBC2E2F7194D5A5100F492E4 /* Frameworks */,
+				DBC2E2F8194D5A5100F492E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Password;
+			productName = Password;
+			productReference = DBC2E2FA194D5A5100F492E4 /* Password.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBC2E31A194D5A5100F492E4 /* PasswordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBC2E32F194D5A5100F492E4 /* Build configuration list for PBXNativeTarget "PasswordTests" */;
+			buildPhases = (
+				DBC2E317194D5A5100F492E4 /* Sources */,
+				DBC2E318194D5A5100F492E4 /* Frameworks */,
+				DBC2E319194D5A5100F492E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBC2E321194D5A5100F492E4 /* PBXTargetDependency */,
+			);
+			name = PasswordTests;
+			productName = PasswordTests;
+			productReference = DBC2E31B194D5A5100F492E4 /* PasswordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBC2E2F2194D5A5100F492E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Arthur;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Minicoder;
+				TargetAttributes = {
+					DBC2E31A194D5A5100F492E4 = {
+						TestTargetID = DBC2E2F9194D5A5100F492E4;
+					};
+				};
+			};
+			buildConfigurationList = DBC2E2F5194D5A5100F492E4 /* Build configuration list for PBXProject "Password" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBC2E2F1194D5A5100F492E4;
+			productRefGroup = DBC2E2FB194D5A5100F492E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBC2E2F9194D5A5100F492E4 /* Password */,
+				DBC2E31A194D5A5100F492E4 /* PasswordTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBC2E2F8194D5A5100F492E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC2E390194D5FE300F492E4 /* ArthurDialogSinglePickerViewController.xib in Resources */,
+				DBC2E39A194D5FE300F492E4 /* ArthurSingleSelectTableViewController.xib in Resources */,
+				DBC2E396194D5FE300F492E4 /* ArthurTimePickerController.xib in Resources */,
+				DBC2E316194D5A5100F492E4 /* Images.xcassets in Resources */,
+				DBC2E308194D5A5100F492E4 /* InfoPlist.strings in Resources */,
+				DBC2E392194D5FE300F492E4 /* ArthurSinglePicker.xib in Resources */,
+				DBC2E394194D5FE300F492E4 /* ArthurDialogTimePickerController.xib in Resources */,
+				DBC2E311194D5A5100F492E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC2E319194D5A5100F492E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC2E327194D5A5100F492E4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBC2E2F6194D5A5100F492E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC2E385194D5FE300F492E4 /* ArthurNetworkOperation.m in Sources */,
+				DBC2E38A194D5FE300F492E4 /* NSArray+NSArrayOperation.m in Sources */,
+				DBC2E30E194D5A5100F492E4 /* ArthurAppDelegate.m in Sources */,
+				DBC2E39B194D5FE300F492E4 /* ArthurTableViewLocalPop.m in Sources */,
+				DBC2E381194D5FE300F492E4 /* ArthurFile.m in Sources */,
+				DBC2E38D194D5FE300F492E4 /* AnimationButtonGroup.m in Sources */,
+				DBC2E386194D5FE300F492E4 /* ArthurNetworkOperation2.m in Sources */,
+				DBC2E37F194D5FE300F492E4 /* ArthurBlockChain.m in Sources */,
+				DBC2E314194D5A5100F492E4 /* ArthurViewController.m in Sources */,
+				DBC2E397194D5FE300F492E4 /* ArthurDialogSegue.m in Sources */,
+				DBC2E38E194D5FE300F492E4 /* ArthurAnimationButton.m in Sources */,
+				DBC2E39C194D5FE300F492E4 /* Base64.m in Sources */,
+				DBC2E3A1194D659200F492E4 /* ContentViewController.m in Sources */,
+				DBC2E38B194D5FE300F492E4 /* NSDate+ArthurDate.m in Sources */,
+				DBC2E384194D5FE300F492E4 /* ArthurMarco.m in Sources */,
+				DBC2E393194D5FE300F492E4 /* ArthurDialogTimePickerController.m in Sources */,
+				DBC2E388194D5FE300F492E4 /* ArthurUnitChange.m in Sources */,
+				DBC2E399194D5FE300F492E4 /* ArthurSingleSelectTableViewController.m in Sources */,
+				DBC2E38C194D5FE300F492E4 /* NSJSONSerialization+ArthurJSON.m in Sources */,
+				DBC2E398194D5FE300F492E4 /* ArthurFixSectionHeadTableViewController.m in Sources */,
+				DBC2E39D194D5FE300F492E4 /* UIView+FindFirstResponder.m in Sources */,
+				DBC2E30A194D5A5100F492E4 /* main.m in Sources */,
+				DBC2E37E194D5FE300F492E4 /* ArthurActionSheet.m in Sources */,
+				DBC2E39E194D5FE300F492E4 /* MBProgressHUD.m in Sources */,
+				DBC2E391194D5FE300F492E4 /* ArthurSinglePicker.m in Sources */,
+				DBC2E380194D5FE300F492E4 /* ArthurDraw.m in Sources */,
+				DBC2E382194D5FE300F492E4 /* ArthurGlobalHeader.m in Sources */,
+				DBC2E389194D5FE300F492E4 /* MNLib.m in Sources */,
+				DBC2E387194D5FE300F492E4 /* ArthurStringAndObject.m in Sources */,
+				DBC2E38F194D5FE300F492E4 /* ArthurDialogSinglePickerViewController.m in Sources */,
+				DBC2E395194D5FE300F492E4 /* ArthurTimePickerController.m in Sources */,
+				DBC2E383194D5FE300F492E4 /* ArthurHexOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC2E317194D5A5100F492E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC2E329194D5A5100F492E4 /* PasswordTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBC2E321194D5A5100F492E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBC2E2F9194D5A5100F492E4 /* Password */;
+			targetProxy = DBC2E320194D5A5100F492E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DBC2E306194D5A5100F492E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBC2E307194D5A5100F492E4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DBC2E30F194D5A5100F492E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBC2E310194D5A5100F492E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DBC2E325194D5A5100F492E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBC2E326194D5A5100F492E4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBC2E32A194D5A5100F492E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DBC2E32B194D5A5100F492E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBC2E32D194D5A5100F492E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Password/Password-Prefix.pch";
+				INFOPLIST_FILE = "Password/Password-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DBC2E32E194D5A5100F492E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Password/Password-Prefix.pch";
+				INFOPLIST_FILE = "Password/Password-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DBC2E330194D5A5100F492E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Password.app/Password";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Password/Password-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PasswordTests/PasswordTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DBC2E331194D5A5100F492E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Password.app/Password";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Password/Password-Prefix.pch";
+				INFOPLIST_FILE = "PasswordTests/PasswordTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBC2E2F5194D5A5100F492E4 /* Build configuration list for PBXProject "Password" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBC2E32A194D5A5100F492E4 /* Debug */,
+				DBC2E32B194D5A5100F492E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBC2E32C194D5A5100F492E4 /* Build configuration list for PBXNativeTarget "Password" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBC2E32D194D5A5100F492E4 /* Debug */,
+				DBC2E32E194D5A5100F492E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DBC2E32F194D5A5100F492E4 /* Build configuration list for PBXNativeTarget "PasswordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBC2E330194D5A5100F492E4 /* Debug */,
+				DBC2E331194D5A5100F492E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBC2E2F2194D5A5100F492E4 /* Project object */;
+}

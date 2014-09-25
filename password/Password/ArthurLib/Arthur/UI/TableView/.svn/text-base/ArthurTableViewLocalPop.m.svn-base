@@ -1,0 +1,116 @@
+//
+//  ArthurViewController.m
+//  StaticCell
+//
+//  Created by lichen on 6/9/14.
+//  Copyright (c) 2014 Minicoder. All rights reserved.
+//
+
+#import "ArthurTableViewLocalPop.h"
+
+@interface ArthurTableViewLocalPop ()
+
+@end
+
+@implementation ArthurTableViewLocalPop
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+//    self.tableViewOfData.scrollEnabled = NO;
+    self.bSelected = NO;
+    [self setExtraCellLineHidden:self.tableView];
+//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    self.cellsLocal = [[self tableCells] mutableCopy];
+}
+
+//隐藏掉多条线
+- (void)setExtraCellLineHidden: (UITableView *)tableView
+{
+    UIView *view =[[UIView alloc]init];
+    view.backgroundColor = [UIColor clearColor];
+    [tableView setTableFooterView:view];
+}
+
+//静单元素
+- (NSArray *)tableCells
+{
+    return nil;
+}
+
+//对每一个cell的pop cell
+- (UITableViewCell *)cellForIndex:(int)nIndex
+{
+    return nil;
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.cellsLocal.count;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (self.bSelected) {
+        self.bSelected = NO;
+        NSIndexPath *pathDelete = [NSIndexPath indexPathForItem:self.nSelectedNumber+1 inSection:indexPath.section];
+        [self.cellsLocal removeObjectAtIndex:pathDelete.row];
+        [self.tableView beginUpdates];
+        [self.tableView deleteRowsAtIndexPaths:@[pathDelete] withRowAnimation:UITableViewRowAnimationMiddle];
+        [self.tableView endUpdates];
+        
+        if (indexPath.row != self.nSelectedNumber) {
+            //删除 + 添加
+            if (indexPath.row < self.nSelectedNumber) {
+                self.nSelectedNumber = (int)indexPath.row;
+            } else {
+                self.nSelectedNumber = (int)indexPath.row - 1;
+            }
+            UITableViewCell *cell = [self cellForIndex:(int)indexPath.row];
+            if (cell) {
+                self.bSelected = YES;
+                //添加
+                NSIndexPath *pathAdd = [NSIndexPath indexPathForItem:self.nSelectedNumber+1 inSection:indexPath.section];
+                [self.cellsLocal insertObject:cell atIndex:pathAdd.row];
+                [self.tableView beginUpdates];
+                [self.tableView insertRowsAtIndexPaths:@[pathAdd] withRowAnimation:UITableViewRowAnimationMiddle];
+                [self.tableView endUpdates];
+            }
+        }
+    } else {
+        UITableViewCell *cell = [self cellForIndex:(int)indexPath.row];
+        if (cell) {
+            self.bSelected = YES;
+            self.nSelectedNumber = (int)indexPath.row;
+            //数据
+            NSIndexPath *path = [NSIndexPath indexPathForItem:self.nSelectedNumber+1 inSection:indexPath.section];
+            [self.cellsLocal insertObject:cell atIndex:path.row];
+            //cell
+            [self.tableView beginUpdates];
+            [self.tableView insertRowsAtIndexPaths:@[path] withRowAnimation:UITableViewRowAnimationMiddle];
+            [self.tableView endUpdates];
+        }
+    }
+    
+    [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = self.cellsLocal[indexPath.row];
+    return cell.frame.size.height;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return self.cellsLocal[indexPath.row];
+}
+
+@end

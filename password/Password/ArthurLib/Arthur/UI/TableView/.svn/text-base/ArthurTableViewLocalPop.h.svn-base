@@ -1,0 +1,22 @@
+//
+//  ArthurViewController.h
+//  StaticCell
+//
+//  Created by lichen on 6/9/14.
+//  Copyright (c) 2014 Minicoder. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface ArthurTableViewLocalPop : UITableViewController
+
+
+@property (strong, nonatomic) NSMutableArray *cellsLocal;
+
+@property int nSelectedNumber;
+@property BOOL bSelected;
+
+- (NSArray *)tableCells;
+- (UITableViewCell *)cellForIndex:(int)nIndex;
+
+@end
