@@ -7,6 +7,7 @@
 //
 
 #import "ContentViewController.h"
+#import "MNLib.h"
 
 #define kContent @"kContent"
 

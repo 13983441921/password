@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PasswordConstant.h"
 
 @interface ContentViewController : UIViewController
 

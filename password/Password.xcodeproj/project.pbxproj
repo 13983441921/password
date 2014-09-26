@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB387EED19D5421800EB2CA4 /* ArthurSetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB387EEC19D5421800EB2CA4 /* ArthurSetPasswordController.m */; };
 		DBC2E2FE194D5A5100F492E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC2E2FD194D5A5100F492E4 /* Foundation.framework */; };
 		DBC2E300194D5A5100F492E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC2E2FF194D5A5100F492E4 /* CoreGraphics.framework */; };
 		DBC2E302194D5A5100F492E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC2E301194D5A5100F492E4 /* UIKit.framework */; };
@@ -68,6 +69,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB387EEB19D5421800EB2CA4 /* ArthurSetPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArthurSetPasswordController.h; sourceTree = "<group>"; };
+		DB387EEC19D5421800EB2CA4 /* ArthurSetPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArthurSetPasswordController.m; sourceTree = "<group>"; };
+		DB387EEE19D5438C00EB2CA4 /* PasswordConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordConstant.h; sourceTree = "<group>"; };
 		DBC2E2FA194D5A5100F492E4 /* Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Password.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC2E2FD194D5A5100F492E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DBC2E2FF194D5A5100F492E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -216,6 +220,9 @@
 				DBC2E313194D5A5100F492E4 /* ArthurViewController.m */,
 				DBC2E39F194D659200F492E4 /* ContentViewController.h */,
 				DBC2E3A0194D659200F492E4 /* ContentViewController.m */,
+				DB387EEB19D5421800EB2CA4 /* ArthurSetPasswordController.h */,
+				DB387EEC19D5421800EB2CA4 /* ArthurSetPasswordController.m */,
+				DB387EEE19D5438C00EB2CA4 /* PasswordConstant.h */,
 				DBC2E315194D5A5100F492E4 /* Images.xcassets */,
 				DBC2E332194D5FE300F492E4 /* ArthurLib */,
 				DBC2E304194D5A5100F492E4 /* Supporting Files */,
@@ -562,6 +569,7 @@
 				DBC2E391194D5FE300F492E4 /* ArthurSinglePicker.m in Sources */,
 				DBC2E380194D5FE300F492E4 /* ArthurDraw.m in Sources */,
 				DBC2E382194D5FE300F492E4 /* ArthurGlobalHeader.m in Sources */,
+				DB387EED19D5421800EB2CA4 /* ArthurSetPasswordController.m in Sources */,
 				DBC2E389194D5FE300F492E4 /* MNLib.m in Sources */,
 				DBC2E387194D5FE300F492E4 /* ArthurStringAndObject.m in Sources */,
 				DBC2E38F194D5FE300F492E4 /* ArthurDialogSinglePickerViewController.m in Sources */,
@@ -773,6 +781,7 @@
 				DBC2E32E194D5A5100F492E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBC2E32F194D5A5100F492E4 /* Build configuration list for PBXNativeTarget "PasswordTests" */ = {
 			isa = XCConfigurationList;
@@ -781,6 +790,7 @@
 				DBC2E331194D5A5100F492E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
